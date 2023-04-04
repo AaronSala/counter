@@ -6,29 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>counter</title>
 </head>
+
 <body>
+    <style>
+        body{
+            display: block;
+        }
+    </style>
     <div id="counter">0</div>
-    <button id='btn' onclick="increament()">Counter</button>
-    <button id="save" onclick="save()">save</button>
+   <input type="number" id="num1">
+   <input type="number" id="num2">
+
+    <button id="sum" onclick="add()">add</button>
+    <button id="minus" onclick="subtract()">subtract</button>
+    <button id="divide" onclick="divider()">divide</button>
+    <button id="multiply" onclick="multiplye()">multiply</button>
+    <span id="answer">sum</span>
     <p id="saved">previus count &nbsp;</p>
 </body>
-<script>
-    let count = document.getElementById('counter');
-    let counters = 0;
-    function increament(){
+<script src="index.js">
+ 
 
-      counters += 1;
-      count.innerText = counters;
-      
-    }
-
-    function save(){
-        
-    let saved = document.getElementById('saved')
-   let prev = counters + " - ";
-    saved.innerHTML +=prev;
-    count.innerText = 0;
-    counters=0
-    }
+  
 </script>
 </html>
