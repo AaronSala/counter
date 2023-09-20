@@ -1,7 +1,25 @@
 
-var fun = function(...num) {
-    console.log(num[0]*num[1]-num[2]);
+function fun (name) {
+   // alert ('hallo ' + name)
     
 }
-arr =[8, 9, 12]
-fun(... arr);
+function greetings(callback) {
+   //var name = prompt('enter name')
+   callback(name)
+}
+greetings(fun);
+
+
+
+
+
+function makeFunc (){
+    var name= "mozila";
+    function dispName(){
+        alert(name);
+
+    }
+    return dispName;
+}
+var myFunc = makeFunc()
+myFunc();
